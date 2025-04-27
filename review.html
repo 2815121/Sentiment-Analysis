@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRAVECHECK</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='food.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="review">
+    <div class="container">
+        <div class="left">
+            <img src="{{ url_for('static', filename='left_image.png') }}" alt="Food Image">
+            
+        </div>
+        
+        <div class="right">
+            <h1>Is It Sweet or Sour? Let’s Find Out !!</h1>
+            <form method="POST" action="/review">
+                <textarea name="review" placeholder="What's in your mind?" class="textbox"></textarea><br>
+                <button type="submit" class="button">Serve</button>
+            </form>
+            {% if sentiment %}
+                <h2>Sentiment: {{ sentiment }}</h2>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,146 @@
+/* Home Page Style */
+body.home {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('first.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+
+    h2 {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 130px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 70px;
+        color: white;
+        margin-bottom: 200px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    /* Button Style */
+.button {
+    background-color: hsl(30, 17%, 74%);
+    color: black;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /*hsl(30, 14%, 89%)*/
+}
+
+.button:hover {
+    background-color: #b9b6b5;
+}
+}
+
+
+/* Review Page Style */
+body.review {
+    /*font-family: 'Segoe UI', sans-serif;*/
+
+    margin: 0;
+    padding: 0;
+    height: 100%;   
+    overflow: hidden; /* Prevent scrolling */
+    
+        
+        font-size: 25px; 
+        font-weight: 800; 
+        color: black;
+        margin-bottom: 80px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        background-color: #fffaf0;
+        text-align: center;
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px; 
+        font-weight: 800; 
+        color: black;
+        margin-bottom: 60px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }    
+
+    
+    /* Button Style */
+.button {
+    background-color: #cb7840;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:  #855535;
+}
+}
+
+
+/* Container Flex Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Section */
+.left {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Right Section */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: rgba(255, 250, 240, 0.6); /* Glass effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    border-radius: 10px;
+    margin: 40px;
+    
+}
+
+/* Textbox Style */
+.textbox {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
